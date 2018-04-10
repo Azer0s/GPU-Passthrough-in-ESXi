@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb,amsmath,amsthm}
 \usepackage{pgfplots}
+\usepackage{comment}
 
 \newtheorem*{theorem1}{Performance of GPU passthrough}
 \newtheorem*{theorem2}{Driver compatability}
@@ -98,8 +99,16 @@ Now, one can install their operating system of choice. After this installation p
   \end{axis}
 \end{tikzpicture}
 
+\begin{comment}
+ TODO: Add real benchmark for 'VM - GTX 1050 Ti'
+\end{comment}
+
 \section{Conclusion}
 
 GPU passthrough is a very mighty tool and a great feature of ESXi. However, it has to be taken with a grain of salt, as it introduces many new problems, unknown behavior and potentially, bugs. Furthermore, the feature is not compatible with all cards. Usage on a bigger scale has to be evaluated further.
+
+\begin{comment}
+ TODO: Add conclusion for Theorems
+\end{comment}
 
 \end{document}
