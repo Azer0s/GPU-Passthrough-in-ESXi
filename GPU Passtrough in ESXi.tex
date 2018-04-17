@@ -21,7 +21,7 @@
 	\vspace{1.5cm}
 	{\scshape\Large Setup and comparison of performance \par}
 	\vspace{2cm}
-	{\Large\itshape Florian \textsc{Schaar} and Ariel \textsc{Simulevski}\par}
+	{\Large\itshape Ariel \textsc{Simulevski} and Florian \textsc{Schaar}\par}
 	\vfill
 	supervised by\par
 	Hans-Peter \textsc{Berger}
@@ -70,7 +70,7 @@ After creating a new virtual appliance on the system, one needs to enable the pa
 \newline
 Important:
 \begin{enumerate}
-\item "Reserve all guest memory" has to be enabled
+\item For some GPUs, "Reserve all guest memory" has to be enabled
 \item Add the device as a PCI/PCIe device
 \item Under all circumstances, avoid adding the audio device to the appliance as this might cause unknown behavior
 \end{enumerate}
@@ -105,10 +105,16 @@ Now, one can install their operating system of choice. After this installation p
 
 \section{Conclusion}
 
-GPU passthrough is a very mighty tool and a great feature of ESXi. However, it has to be taken with a grain of salt, as it introduces many new problems, unknown behavior and potentially, bugs. Furthermore, the feature is not compatible with all cards. Usage on a bigger scale has to be evaluated further.
+\subsection{Conclusion of Theorems}
 
-\begin{comment}
- TODO: Add conclusion for Theorems
-\end{comment}
+\subsubsection{Performance of GPU passthrough}
+Lorem ipsum dolor sit amet
+
+\subsubsection{Driver compatability}
+As suspected, all OpenGL compatible PCIe graphics devices do function as expected in ESXi.
+
+\subsection{Epilogue}
+
+GPU passthrough is a very mighty tool and a great feature of ESXi. However, it has to be taken with a grain of salt, as it introduces many new problems, unknown behavior and potentially, bugs. Furthermore, the feature is not compatible with all cards. Usage on a bigger scale has to be evaluated further.
 
 \end{document}
