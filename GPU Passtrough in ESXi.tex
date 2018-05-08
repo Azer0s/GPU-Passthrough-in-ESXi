@@ -21,7 +21,9 @@
 	\vspace{1.5cm}
 	{\scshape\Large Setup and comparison of performance \par}
 	\vspace{2cm}
-	{\Large\itshape Ariel \textsc{Simulevski} and Florian \textsc{Schaar}\par}
+	{\Large\itshape Ariel \textsc{Simulevski}}
+	and
+	{\Large\itshape Florian \textsc{Schaar} \par}
 	\vfill
 	supervised by\par
 	Hans-Peter \textsc{Berger}
@@ -93,7 +95,7 @@ Now, one can install their operating system of choice. After this installation p
     \addplot [ybar,fill=blue]
     	coordinates {
     		(Native - GTX 1050 Ti,80.63)
-			(VM - GTX 1050 Ti,80.0)
+			(VM - GTX 1050 Ti,75.6)
 			(Native - AMD Vega 64, 99.46)
 		};
   \end{axis}
@@ -108,7 +110,7 @@ Now, one can install their operating system of choice. After this installation p
 \subsection{Conclusion of Theorems}
 
 \subsubsection{Performance of GPU passthrough}
-Lorem ipsum dolor sit amet
+As expected, the performance impact of the GPU passthrough was minimal (5.03 FPS). This means that forwarding a PCIe connection to a VM is both a viable and efficient solution.
 
 \subsubsection{Driver compatability}
 As suspected, all OpenGL compatible PCIe graphics devices do function as expected in ESXi.
